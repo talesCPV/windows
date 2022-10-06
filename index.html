@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/modal.css">
     <script src="sketch/windows.js"></script>
     <title>Windows</title>
     <style>
         body{
-            background-image: url('https://images2.alphacoders.com/941/941898.jpg');
+            background-image: url('assets/wallpaper.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
@@ -41,8 +42,6 @@
                     <li> <a href="javascript:localStorage.clear();this.location.reload(true);">Logout</a></li>
                 </ul>
 
-
-<!--                <div onclick="javascript:openHTML('viewUser.html','pop-up','Dados do Usuário',{'mode':'user','id':localStorage.getItem('id'),'user':localStorage.getItem('username'),'email':localStorage.getItem('email'),'nome':localStorage.getItem('nome'),'cel':localStorage.getItem('cel'),'class':localStorage.getItem('access')})"></div>-->
             </li>
         </ul>
 
@@ -50,30 +49,12 @@
     
     </nav>
 
-
+    <div id="content-screen"></div>
+    <div id="myModal"></div>
     
 </body>
 <script>
     openMenu()
-
-    document.querySelector('#clock').innerHTML = '01:30'
-
-    function startTime() {
-        const today = new Date();
-        let h = today.getHours();
-        let m = today.getMinutes();
-        let s = today.getSeconds();
-        m = checkTime(m);
-        s = checkTime(s);
-        document.getElementById('clock').innerHTML =  h + ":" + m + ":" + s;
-        setTimeout(startTime, 1000);
-    }
-
-    function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
-    }
-
 
 </script>
 

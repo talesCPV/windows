@@ -6,6 +6,12 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
+#btn-Iniciar{
+	background-color: #2FB140;
+	border-radius: 0 15px 15px 0;
+	font-weight: bolder;
+	font-size: 1em;
+}
 
 #usr-bar{
 	display: flex;
@@ -155,6 +161,8 @@ nav ul ul ul li {
 
 	
 /* Change ' +' in order to change the Dropdown symbol */
+
+
 
 ul ul li {
 
